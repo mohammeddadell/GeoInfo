@@ -1,0 +1,36 @@
+<%- include('layout.ejs'); %>
+<div class="container">
+<div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <h2>Geo Info</h2>  
+                        <div class="card">
+                            
+                            <div class="card-body">
+
+                                <form class="form-horizontal" method="post" action="/infoEjs">
+
+                                
+                                    <div class="form-group">
+                                        <label for="region" class="cols-sm-2 control-label">Enter the Continent/Region name</label>
+                                        <div class="cols-sm-10">
+                                            <div class="input-group">
+                                                <span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
+                                                <input type="text" class="form-control" name="region" id="region" placeholder="Enter the Cintinent/Region name" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                                                        
+                                    <div class="form-group ">
+                                        <button type="submit" class="btn btn-primary btn-lg btn-block sub-button">Get Info</button>
+                                    </div>
+                                </form>
+                               
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+</div>
+
+</body>
+</html>

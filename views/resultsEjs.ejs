@@ -1,0 +1,28 @@
+<%- include('layout.ejs'); %>
+<div class="container">
+<div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <h2>Geo Info</h2>  
+                        <div class="card">
+                            <div><a class="link-primary" href="/infoEjs">Back</a></div>
+                            
+                            <% if (reg) { %>
+                                <div class="card-body">
+                                    <div> <label for="regionName" class="cols-sm-2 control-label regionName">Region Name: <%= reg.regionName %></label></div>
+                                    <div> <label for="totalPop" class="cols-sm-2 control-label totalPop">Total population: <%= reg.totalPopulation %></label></div>
+                                   <div><label for="mostPop" class="cols-sm-2 control-label mostPop">Most populated country: <%= reg.mostPopulated %></label></div>
+                                    
+                                </div>
+                                <% } else { %>
+                                    <% if (error.message) { %>
+                                    <h1 class="error-message"><%= error.message %></h1>
+                                    <% } %>
+                                <% } %>
+
+                        </div>
+                    </div>
+                </div>
+</div>
+
+</body>
+</html>
