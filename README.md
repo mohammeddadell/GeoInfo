@@ -1,6 +1,6 @@
 # GeoInfo
  
- 1- Create a '.env' file on the roor and add the following line: [API_URL= "https://restcountries.com/v3.1/region/"]
+ 1- Create a '.env' file on the root and add the following line: [API_URL= "https://restcountries.com/v3.1/region/"]
  
  2- install nodemon globally
  
